@@ -1,0 +1,77 @@
+create table pet (
+	id INT,
+	nome VARCHAR(50),
+	tipo VARCHAR(3),
+	raca VARCHAR(13),
+	created_at DATE
+);
+insert into pet (id, nome, tipo, raca, created_at) values (1, 'Leyla', 'dog', 'chihuahua', '2021-09-16');
+insert into pet (id, nome, tipo, raca, created_at) values (2, 'Ham', 'cat', 'persa', '2022-07-03');
+insert into pet (id, nome, tipo, raca, created_at) values (3, 'Gusella', 'cat', 'persa', '2022-02-11');
+insert into pet (id, nome, tipo, raca, created_at) values (4, 'Cirstoforo', 'dog', 'labrador', '2022-03-06');
+insert into pet (id, nome, tipo, raca, created_at) values (5, 'Omero', 'dog', 'pastor alemao', '2022-05-22');
+insert into pet (id, nome, tipo, raca, created_at) values (6, 'Eada', 'dog', 'caramelo', '2022-07-16');
+insert into pet (id, nome, tipo, raca, created_at) values (7, 'Gabe', 'cat', 'ragdoll', '2022-03-19');
+insert into pet (id, nome, tipo, raca, created_at) values (8, 'Paige', 'dog', 'pug', '2022-03-10');
+insert into pet (id, nome, tipo, raca, created_at) values (9, 'Field', 'dog', 'caramelo', '2021-11-26');
+insert into pet (id, nome, tipo, raca, created_at) values (10, 'Lucilia', 'dog', 'chihuahua', '2021-10-06');
+insert into pet (id, nome, tipo, raca, created_at) values (11, 'Konstanze', 'dog', 'labrador', '2021-11-16');
+insert into pet (id, nome, tipo, raca, created_at) values (12, 'Jodie', 'cat', 'bengala', '2021-12-14');
+insert into pet (id, nome, tipo, raca, created_at) values (13, 'Walt', 'cat', 'siames', '2022-07-24');
+insert into pet (id, nome, tipo, raca, created_at) values (14, 'Ronnie', 'cat', 'ragdoll', '2022-03-26');
+insert into pet (id, nome, tipo, raca, created_at) values (15, 'Vance', 'cat', 'ragdoll', '2021-09-23');
+insert into pet (id, nome, tipo, raca, created_at) values (16, 'Gregoire', 'dog', 'pitbull', '2022-08-09');
+insert into pet (id, nome, tipo, raca, created_at) values (17, 'Ginnifer', 'cat', 'persa', '2021-12-28');
+insert into pet (id, nome, tipo, raca, created_at) values (18, 'Edgar', 'cat', 'ragdoll', '2022-07-08');
+insert into pet (id, nome, tipo, raca, created_at) values (19, 'Meryl', 'dog', 'chihuahua', '2022-08-11');
+insert into pet (id, nome, tipo, raca, created_at) values (20, 'Madella', 'dog', 'pug', '2022-01-14');
+insert into pet (id, nome, tipo, raca, created_at) values (21, 'Nicky', 'dog', 'labrador', '2022-08-08');
+insert into pet (id, nome, tipo, raca, created_at) values (22, 'Trudy', 'cat', 'bengala', '2022-03-12');
+insert into pet (id, nome, tipo, raca, created_at) values (23, 'Carol-jean', 'cat', 'sphynx', '2021-09-10');
+insert into pet (id, nome, tipo, raca, created_at) values (24, 'Devy', 'cat', 'persa', '2022-02-21');
+insert into pet (id, nome, tipo, raca, created_at) values (25, 'Kevin', 'cat', 'persa', '2022-02-24');
+insert into pet (id, nome, tipo, raca, created_at) values (26, 'Efrem', 'cat', 'ragdoll', '2021-11-30');
+insert into pet (id, nome, tipo, raca, created_at) values (27, 'Zola', 'cat', 'siames', '2021-12-24');
+insert into pet (id, nome, tipo, raca, created_at) values (28, 'Sax', 'dog', 'pastor alemao', '2021-09-30');
+insert into pet (id, nome, tipo, raca, created_at) values (29, 'Wilow', 'cat', 'maine coon', '2021-11-27');
+insert into pet (id, nome, tipo, raca, created_at) values (30, 'Moses', 'dog', 'pug', '2022-02-06');
+insert into pet (id, nome, tipo, raca, created_at) values (31, 'Maurine', 'dog', 'chihuahua', '2022-04-23');
+insert into pet (id, nome, tipo, raca, created_at) values (32, 'Galen', 'cat', 'siames', '2021-10-28');
+insert into pet (id, nome, tipo, raca, created_at) values (33, 'Sydelle', 'dog', 'chihuahua', '2021-10-25');
+insert into pet (id, nome, tipo, raca, created_at) values (34, 'Koralle', 'cat', 'ragdoll', '2021-12-03');
+insert into pet (id, nome, tipo, raca, created_at) values (35, 'Angelica', 'cat', 'sphynx', '2022-06-01');
+insert into pet (id, nome, tipo, raca, created_at) values (36, 'Nerissa', 'dog', 'pastor alemao', '2022-02-01');
+insert into pet (id, nome, tipo, raca, created_at) values (37, 'Pierette', 'dog', 'pitbull', '2022-03-09');
+insert into pet (id, nome, tipo, raca, created_at) values (38, 'Peta', 'cat', 'persa', '2021-09-02');
+insert into pet (id, nome, tipo, raca, created_at) values (39, 'Cyndia', 'cat', 'sphynx', '2022-06-03');
+insert into pet (id, nome, tipo, raca, created_at) values (40, 'Stinky', 'dog', 'caramelo', '2022-04-20');
+insert into pet (id, nome, tipo, raca, created_at) values (41, 'Dede', 'dog', 'pastor alemao', '2022-06-19');
+insert into pet (id, nome, tipo, raca, created_at) values (42, 'Ricky', 'cat', 'sphynx', '2022-08-13');
+insert into pet (id, nome, tipo, raca, created_at) values (43, 'Colline', 'cat', 'ragdoll', '2021-12-14');
+insert into pet (id, nome, tipo, raca, created_at) values (44, 'Emmery', 'dog', 'pastor alemao', '2022-04-08');
+insert into pet (id, nome, tipo, raca, created_at) values (45, 'Kelcy', 'dog', 'chihuahua', '2021-12-16');
+insert into pet (id, nome, tipo, raca, created_at) values (46, 'Bourke', 'cat', 'siames', '2022-01-01');
+insert into pet (id, nome, tipo, raca, created_at) values (47, 'Lester', 'cat', 'maine coon', '2022-08-11');
+insert into pet (id, nome, tipo, raca, created_at) values (48, 'Chauncey', 'cat', 'persa', '2021-09-19');
+insert into pet (id, nome, tipo, raca, created_at) values (49, 'Sibylle', 'cat', 'sphynx', '2021-10-02');
+insert into pet (id, nome, tipo, raca, created_at) values (50, 'Tressa', 'dog', 'pug', '2021-10-03');
+insert into pet (id, nome, tipo, raca, created_at) values (51, 'Karoly', 'dog', 'pug', '2022-02-17');
+insert into pet (id, nome, tipo, raca, created_at) values (52, 'Clevey', 'cat', 'siames', '2022-06-19');
+insert into pet (id, nome, tipo, raca, created_at) values (53, 'Loise', 'cat', 'maine coon', '2022-06-18');
+insert into pet (id, nome, tipo, raca, created_at) values (54, 'Vin', 'dog', 'labrador', '2022-05-29');
+insert into pet (id, nome, tipo, raca, created_at) values (55, 'Kendre', 'dog', 'pug', '2021-11-16');
+insert into pet (id, nome, tipo, raca, created_at) values (56, 'Sheffie', 'dog', 'pug', '2022-07-11');
+insert into pet (id, nome, tipo, raca, created_at) values (57, 'Ennis', 'dog', 'caramelo', '2022-02-02');
+insert into pet (id, nome, tipo, raca, created_at) values (58, 'Maximilien', 'dog', 'caramelo', '2022-01-29');
+insert into pet (id, nome, tipo, raca, created_at) values (59, 'Lula', 'dog', 'caramelo', '2022-04-02');
+insert into pet (id, nome, tipo, raca, created_at) values (60, 'Bea', 'cat', 'bengala', '2021-09-30');
+insert into pet (id, nome, tipo, raca, created_at) values (61, 'Jeffie', 'dog', 'chihuahua', '2022-02-27');
+insert into pet (id, nome, tipo, raca, created_at) values (62, 'Valenka', 'cat', 'maine coon', '2022-06-29');
+insert into pet (id, nome, tipo, raca, created_at) values (63, 'Romain', 'cat', 'ragdoll', '2022-02-05');
+insert into pet (id, nome, tipo, raca, created_at) values (64, 'Michaella', 'dog', 'chihuahua', '2021-09-09');
+insert into pet (id, nome, tipo, raca, created_at) values (65, 'Kiel', 'cat', 'siames', '2022-03-28');
+insert into pet (id, nome, tipo, raca, created_at) values (66, 'Karlotta', 'dog', 'caramelo', '2022-06-22');
+insert into pet (id, nome, tipo, raca, created_at) values (67, 'Norbert', 'cat', 'siames', '2022-07-21');
+insert into pet (id, nome, tipo, raca, created_at) values (68, 'Josephine', 'cat', 'maine coon', '2022-03-17');
+insert into pet (id, nome, tipo, raca, created_at) values (69, 'Dulcine', 'cat', 'siames', '2021-11-21');
+insert into pet (id, nome, tipo, raca, created_at) values (70, 'Cori', 'cat', 'bengala', '2021-11-05');
