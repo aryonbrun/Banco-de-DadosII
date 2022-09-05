@@ -1,3 +1,1 @@
-# Banco-de-Dados-II
-# Banco-de-DadosII
-# Banco-de-DadosII
+Repositório destinado para trabalhos e atividades.
