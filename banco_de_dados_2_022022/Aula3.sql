@@ -1,8 +1,5 @@
 USE sakila;
 
-
-
-
 SET @ID_COSTUMER_SELECTED = (SELECT
     customer.customer_id
 FROM 
@@ -10,12 +7,16 @@ FROM
 WHERE
     customer.email = 'KIM.CRUZ@sakilacustomer.org');
 
+--------
 
 SELECT 
     @ID_CUSTOMER_SELECTED 
 AS 
     'ID_CUSTOMER_SELECTED';
 
+--------
+
+--FILMES ASSISTIDOS POR KIM
 
 SELECT 
     film.title,
@@ -23,15 +24,16 @@ SELECT
 FROM 
     film 
 WHERE 
-    film.film_id IN ( 
+    film_id IN ( 
+        
         SELECT 
             inventory.film_id 
         FROM 
             inventory 
         WHERE 
-            rental.customer_id IN (
+            inventory.inventory_id IN (
                 SELECT 
-                    rental.customer_id
+                    rental.inventory_id
                 FROM
                     rental
                 WHERE
