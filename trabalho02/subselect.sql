@@ -8,7 +8,7 @@
 
 USE sakila;
 
-SELECT film.film_id, film.title 
+SELECT film.film_id, film.title, film.description AS description
 FROM film
 WHERE film_id IN( 
 
@@ -22,7 +22,7 @@ WHERE film_id IN(
 
             SELECT customer.customer_id
             FROM customer
-            WHERE customer.address_id IN(
+            WHERE address_id IN(
 
                 SELECT address.address_id
                 FROM address
