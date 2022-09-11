@@ -8,7 +8,7 @@ WHERE actor.actor_id IN (
     FROM film_actor
     WHERE film_actor.film_id IN(
 
-        SELECT film.film.id
+        SELECT film.film_id
         FROM film
         WHERE film.film_id IN(
             
@@ -18,7 +18,7 @@ WHERE actor.actor_id IN (
                 
                 SELECT rental.inventory_id
                 FROM rental
-                WHERE rental.costumer_id = (
+                WHERE rental.customer_id = (
 
                     SELECT customer.customer_id
                     FROM customer
