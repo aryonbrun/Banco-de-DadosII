@@ -174,6 +174,11 @@ INSERT INTO usuarios_produtos (id_usuario, id_produto) VALUES
 
 SELECT * FROM usuarios_produtos;
 
+-- 1 - Com subselect, monte query traz o nome do cliente, a empresa do cliente,
+--  o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - 
+--  trazer para um conjunto de clientes (veja in) pelo nome. 
+--  Deve haver um limit de 3 registros.
+
 SELECT
 
     "EXERCICIO1" AS MESSAGE_LOG;
@@ -208,6 +213,11 @@ WHERE
 )
 LIMIT
     3;
+
+    -- 2 - Com subselect, monte query traz o nome do cliente, a empresa do cliente, 
+    -- o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - 
+    -- trazer para um conjunto de clientes (veja in) pelo nome. 
+    -- Deve haver uma ordenação orientada pela quantidade de produtos sendo essa descendente.
 
 SELECT
 
@@ -245,6 +255,11 @@ WHERE
 ORDER BY
     produtos.quantidade DESC;
 
+    -- 3 - Com inner join, monte query traz o nome do cliente, a empresa do cliente,
+    --  o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque - 
+    --  trazer para um conjunto de clientes (veja in) pelo nome. 
+    --  Deve haver uma ordenação orientada pelo preço de compra (do maior para o menor)
+
 SELECT
 
     "EXERCICIO3" AS MESSAGE_LOG;
@@ -266,6 +281,13 @@ INNER JOIN empresas
     ON produtos.id_empresa = empresas.id_empresa
 ORDER BY produtos.preco_compra DESC;
 
+
+
+-- 4 - Com left join, monte query traz o nome do cliente, a empresa do cliente,
+--  o nome do produto que o cliente consume, o telefone do cliente e a quantidade do produto em estoque 
+--  trazer para um conjunto de clientes (veja in) pelo nome. 
+--  Deve haver uma ordenação orientada pelo preço de compra (do maior para o menor).
+ 
 SELECT
 
     "EXERCICIO4" AS MESSAGE_LOG;
