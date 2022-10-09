@@ -36,9 +36,21 @@ INSERT INTO a (name_a, id_b) VALUES()
 ('l')   NULL;
 
 
-SELECT * FROM A;
+SELECT * FROM A; -- 
 
 SELECT * FROM B;
+ 
+-- PEGAR A INTERSEÇÃO
+SELECT b.id_b FROM b INNER JOIN a ON b.id_b = a.id_b;
 
-SELECT b.id_b from b WHERWE id_b NOT IN (SELECT b.id_b FROM b INNER JOIN a ON b.id_b = a.id_b
+--  TIRAR A INTERSEÇÃO
+SELECT * FROM b WHERE b.id_b NOT IN(
+    SELECT b.id_b FROM b INNER JOIN a ON b.id_b = a.id_b
 );
+
+-- 
+SELECT b.id_b from b WHERE id_b NOT IN (SELECT b.id_b FROM b INNER JOIN a ON b.id_b = a.id_b
+);
+
+-- 
+SELECT * FROM b LEFT OUTER JOIN a ON b.id_b
