@@ -1,0 +1,13 @@
+1) Suponha que tenha sido identificado que uma tabela, cujo nome é disciplinas, não apresentava nenhum índice criado que estivesse associado ao campo id_disciplinas. Nessa situação, o comando abaixo permite a criação desse índice com o nome idx_id_curso.
+
+CREATE INDEX IN disciplinas ON idx_id_curso
+(id_disciplina).
+
+
+a) certo
+**b) errado**
+
+
+2) O que são índices clusterizados?
+
+3) O que são índices não-clusterizados?
