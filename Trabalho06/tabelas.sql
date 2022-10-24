@@ -1,0 +1,33 @@
+CREATE DATABASE trabalho06;
+
+USE trabalho06;
+
+-- CRIANDO A TABELA COM A PRIMARY
+CREATE TABLE aryon (
+    id_nome INTEGER PRIMARY KEY AUTO_INCREMENT,
+    rg VARCHAR (255) NOT NULL 
+);
+-- CRIANDO A TABELA COM A PRIMARY
+CREATE TABLE brunetti (
+    id_nome INTEGER PRIMARY KEY AUTO_INCREMENT,
+    cpf VARCHAR (255) NOT NULL,
+    FOREIGN KEY (id_aryon) REFERENCES aryon (id_aryon)
+);
+
+ --INSERINDO VALORES
+
+INSERT INTO aryon (rg) VALUES
+    ('12346567'),
+    ('76543210'),
+    ('9685741'),
+    ('1425369');
+
+INSERT INTO brunetti (cpf)  VALUES
+    ('05445896574', 1),
+    ('02345748574', 2),
+    ('12368745685', 3),
+    ('12396587457', 4),
+   
+SELECT * FROM aryon;
+SELECT * FROM brunetti;
+
