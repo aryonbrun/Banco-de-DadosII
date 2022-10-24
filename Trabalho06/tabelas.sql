@@ -31,3 +31,33 @@ INSERT INTO brunetti (cpf)  VALUES
 SELECT * FROM aryon;
 SELECT * FROM brunetti;
 
+set autocommit = 0;
+
+START TRANSACTION;
+
+DELETE FROM brunetti WHERE id_aryon = 2;
+
+SELECT "BEFORE ROLLBACK" as "LOST";
+
+SELECT * FROM brunetti;
+
+ROLLBACK;
+SELECT "AFTER ROLLBACK" AS "LOG";
+
+SELECT  * FROM brunetti;
+
+SET autocommit=1;
+
+DELIMITER $$
+    CREATE TRIGGER  trigger_01 AFTER INSERT ON aryon FOR EACH ROW
+        BEGIN UPDATE brunetti SET cpf = ('08800099999') 
+        WHERE brunetti.id_brunetti = 1;
+        END $$;
+
+DELIMITER;
+
+INSERT INTO aryon(rg) VALUES
+    ('12547859574');
+
+SELECT * FROM brunetti;
+
