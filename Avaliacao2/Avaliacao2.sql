@@ -42,12 +42,12 @@ START TRANSACTION;
 
 DELETE FROM brunetti WHERE id_aryon = 2;
 
-SELECT "BEFORE ROLLBACK" as "LOST";
+SELECT "BEFORE ROLLBACK" as "INFO";
 
 SELECT * FROM brunetti;
 
 ROLLBACK;
-SELECT "AFTER ROLLBACK" AS "LOG";
+SELECT "AFTER ROLLBACK" AS "INFO";
 
 SELECT  * FROM brunetti;
 
@@ -55,7 +55,7 @@ SET autocommit=1;
 
 
 DELIMITER //
-    CREATE TRIGGER  trigger_01 AFTER INSERT ON aryon 
+    CREATE TRIGGER trigger_01 AFTER INSERT ON aryon 
     FOR EACH ROW
     BEGIN 
         UPDATE brunetti SET cpf = ('08800099999') WHERE brunetti.id_brunetti = 1;
